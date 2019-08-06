@@ -1,0 +1,121 @@
+#login-body {
+  height:100vh;
+  background-image:url("/images/login_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-position: 50% 50%;
+  div.container-fluid {
+    .left-side {
+      .login-form{
+        background-color: $theme-light-blue;
+        padding:15px 0;
+        margin:15px 0;
+        border-radius:3px;
+
+        div.form-container {
+          margin:10px 0;
+
+          > :first-child {
+            margin: 0;
+            margin-top:10px;
+            margin-bottom:20px;
+            height:40%;
+          }
+          > :last-child {
+            margin: 0;
+            margin-top:20px;
+            margin-bottom:10px;
+            height:40%;
+          }
+          .form-group {
+            padding:3px 0;
+            .form-title {
+              font-weight: bold;
+              color: $theme-dark-blue;
+              text-transform: uppercase;
+            }
+            input::placeholder {
+              color: $theme-white;
+              opacity:1;
+            }
+            .input-element{
+              border-radius:3px;
+              padding-left:3px;
+              background-color:transparent;
+              color:$theme-white;
+              border:none;
+              border-bottom:2px solid $theme-white;
+              height:35px;
+              outline:none;
+            }
+            .login-button{
+              background-color: $theme-white;
+              border:none;
+              color: $theme-dark-blue;
+              font-weight:bold;
+              height:60px;
+            }
+
+          }
+        }
+      }
+    }
+    .center-side {
+      .text-container {
+        margin:15px 0;
+        letter-spacing: 1px;
+        font-size:9px;
+        font-weight: bold;
+        .o-color {
+          color: $theme-white;
+        }
+        .r-color {
+          color: $theme-white;
+        }
+      }
+    }
+    .right-side {
+
+      .sign-up-button {
+        //background-color: $theme-white;
+        background-color: red;
+        border:none;
+        color: $theme-dark-blue;
+        font-weight:bold;
+        height:60px;
+      }
+    }
+
+  }
+
+}
+
+@media (min-width:576px) {
+  div.container-fluid {
+    height: 100%;
+  }
+
+}
+@media (max-width:575px){
+  div.container-fluid {
+    min-height: 100%;
+  }
+}
+@media (max-width: 767.98px) {
+  .login-form{
+    height:fit-content;
+    width:100%;
+  }
+}
+@media (min-width: 768px){
+  .login-form{
+    height: 300px;
+    width:85%;
+    @extend .d-flex !optional;
+    @extend .justify-content-center !optional;
+    @extend .align-items-center !optional;
+
+  }
+
+}

@@ -1,16 +1,43 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);#login-body {
-  height: 100vh;
   background-image: url("/images/login_background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
 }
 
+#login-body div.container-fluid {
+  position: relative;
+  min-height: 100vh;
+}
+
+#login-body div.container-fluid .header-container {
+  height: 45px;
+  position: absolute;
+  top: 0;
+}
+
+#login-body div.container-fluid .header-container .header-text {
+  padding: 10px;
+}
+
+#login-body div.container-fluid .header-container .header-text h6 {
+  margin: 0;
+}
+
+#login-body div.container-fluid .header-container .header-left-text {
+  color: #4E759C;
+}
+
+#login-body div.container-fluid .header-container .header-right-text {
+  color: #FFFFEF;
+}
+
 #login-body div.container-fluid .left-side .login-form {
+  border: 1px solid #FFFFEF;
   background-color: #8CC5DE;
   padding: 15px 0;
-  margin: 15px 0;
   border-radius: 3px;
+  position: relative;
 }
 
 #login-body div.container-fluid .left-side .login-form div.form-container {
@@ -85,6 +112,16 @@
   height: 60px;
 }
 
+#login-body div.container-fluid .left-side .login-form .forgot-password {
+  position: absolute;
+  bottom: 0;
+  padding: 2px 0;
+  outline: none;
+  text-decoration: none;
+  color: white;
+  font-size: 10px;
+}
+
 #login-body div.container-fluid .center-side .text-container {
   margin: 15px 0;
   letter-spacing: 1px;
@@ -101,23 +138,15 @@
 }
 
 #login-body div.container-fluid .right-side .sign-up-button {
-  background-color: red;
-  border: none;
+  background-color: #FFFFEF;
   color: #4E759C;
   font-weight: bold;
   height: 60px;
-}
-
-@media (min-width: 576px) {
-  div.container-fluid {
-    height: 100%;
-  }
-}
-
-@media (max-width: 575px) {
-  div.container-fluid {
-    min-height: 100%;
-  }
+  border: 1px solid #8CC5DE;
+  text-decoration: none;
+  padding: 15px;
+  font-size: 18px;
+  margin: 15px 0;
 }
 
 @media (max-width: 767.98px) {
@@ -126,6 +155,7 @@
     height: -moz-fit-content;
     height: fit-content;
     width: 100%;
+    margin: 45px 0 15px 0;
   }
 }
 
@@ -133,6 +163,7 @@
   .login-form {
     height: 300px;
     width: 85%;
+    margin: 15px 0;
   }
 }
 
